@@ -1,65 +1,44 @@
 header {
-    /* troca a cor de fundo do header */
     background-color: rgb(18, 17, 17);
-    /* define se um elemento é tratado como um bloco ou elemento inline,
-    o flex o torna flexivel e ajustavel a página e manipulando os outros elementos */
-    display: flex;
-    /* alinha os itens ao centro do header */
-    align-items: center;
-    /* da espaçamento entre os itens do header */
-    justify-content: space-between;
-    /* preenchimento do header em pixels, para horizontal e vertical */
-    padding: 0px 10px;
+    display: flex; /* define o elemento como flexivel */
+    align-items: center; /* alinha os itens do header */
+    justify-content: space-between; /* da espaçamento entre os itens do header */
+    padding: 0px 10px; /* preenchimento do header em pixels, para horizontal e vertical */
 }
 ul{
-    /* adiciona uma margem a direita dos links de navegação */
     margin-right: 10px;
     display: flex;
-    /* indica a direção que o flex iraa seguir, se é em linha ou em coluna */
-    flex-direction: row;
-    /* justifica o conteúdo a direita */
+    flex-direction: row;  /* indica a direção que o flex iraa seguir, se é em linha ou em coluna */
     justify-content: right;
 }
 li{
     display: flex;
     justify-content: right;
-    /* adiciona um preenchimento a esquerda em 15 pixels */
-    padding-left: 15px;
+    padding-left: 15px;  /* adiciona um preenchimento a esquerda em 15 pixels */
 
 }
 a{
-    /* troca a cor das letras para branco */
-    color: white;
+    color: white; /* troca a cor das letras para branco */
     display: flex;
-    /* tira efeitos de decoração do texto, como sublinhados e negritos */
-    text-decoration: none;
+    text-decoration: none; /* tira efeitos de decoração do texto, como sublinhados e negritos */
 }
 section{
     display: flex;
-    /* os itens são distribuídos igualmente no espaço disponível */
-    justify-content: space-evenly;
-    /* alinha os itens ao começo da area do flex */
+    justify-content: space-evenly; /* os itens são distribuídos igualmente no espaço disponível */
     align-items: flex-start;
-    /* define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas */
-    flex-wrap: wrap;
-    /* define os espaços entre as linhas e colunas */
-    gap: 15px;
+    flex-wrap: wrap; /* define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas */
+    gap: 15px; /* define os espaços entre as linhas e colunas */
 }
 article{
-    /* os elementos podem aumentar para preencher o contêiner  */
-    flex: 1 1 50px;
+    flex: 1 1 50px;  /* os elementos podem aumentar para preencher o contêiner  */
 }
 img{
     display: flex;
-    /* define o tamanho da imagem na horizontal */
     width: 100%;
-    /* define o tamanho da imagem na vertical automaticamente*/
     height: auto;
-    /* define o tamanho minimo da imagem na horizontal */
     min-width: 175px;
 }
 body{
-    /* define o espaçamento da margem */
     margin: 0;
 }
 /* define o espaçamento maximo para alterar o site em 670 pixels */
@@ -69,7 +48,6 @@ body{
         flex-direction: column;
         justify-content: flex-end;
     }
-    /* aumenta o tamanho do logo para 31 pixels */
     a{
         font-size: 31px;
     }
